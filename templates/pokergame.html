@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Game Page</title>
+    </head>
+    <body>
+        <h1>Poker Game</h1>
+
+        <style>
+            body {
+                padding: 25px;
+                background-color: #EFEFEF;
+            }
+            #theImage {
+                width: 50%;
+                height: auto;
+                animation-delay: 1s;
+            }
+            #container {
+                width: 50%;
+                margin: 0 auto;
+            }
+         
+        </style>
+
+
+        <div class='form'>
+            <form method='POST' action=''>
+                <!--The hidden tag here is necessary for CSRF protection (always include in forms)-->
+                {{ form.hidden_tag() }}
+                <!--We display the username field label and the field itself-->
+
+                <h4>
+                    <td> <span>{{player}}</span> 
+                    </td> 
+
+                <h4>
+                    <td> <span>{{cardnumber}}</span> 
+                    </td>
+
+
+                <br>
+                <h4>
+                    <td> <span>{{opponenthand}}</span> 
+                    </td>  
+
+                <br>  
+                {% if filenames %}
+                <div class="row">
+                    {% for opfilename in op_filenames %} 
+                        <img id="theImage" src="{{ url_for('static', filename=opfilename) }}"  style="width:10%">
+                {% endfor %}
+                </div> 
+                {% endif %}
+                <br>
+                <td><span>{{ form.showopponentcard }}</span></td>
+
+                
+
+
+
+
+                <br>
+                <h4>
+                    <td> <span>{{playerhand}}</span> 
+                    </td>  
+                <br>  
+                {% if filenames %}
+                <div class="row">
+                    {% for filename in filenames %}       
+                        <img id="theImage" src="{{ url_for('static', filename=filename) }}"  style="width:10%">
+                {% endfor %}
+                </div> 
+                {% endif %}
+                <br>
+                <td><span>{{ form.showplayercard }}</span></td>
+
+
+
+
+
+
+                
+                
+
+                
+
+
+
+
+
+                <h4>
+                    <td> <span>{{winstring}}</span> 
+                    </td>  
+
+                <br>
+                <br>
+                <!-- <img src="{{url_for('static', filename='cityskyline.png')}}" align="middle" /> -->
+                <td><span>{{ form.newgame }}</span></td>
+                <br>
+                <tr>
+                    <td>{{form.cardnumber.label}}</td>
+                    <td> {{form.cardnumber}} </td>
+                </tr>
+
+                
+            </form>
+
+        </div>
+            
+
+
+        
+
+
+
+</body>
+</html>
