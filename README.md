@@ -167,7 +167,7 @@ Screenshot from VSCode:
 
  
 Full Unittest:
-$  cd "c:\\Users\\Sabina Ku\\Desktop\\DevOpsJobs_Sabina CV\\DevOpsJobsApplication - Companies\\potential DevOps opportunities\\Grabyo challenge\\poker_4files_revised" ; /usr/bin/env "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe" "c:\\Users\\Sabina Ku\\.vscode\\extensions\\ms-python.python-2021.8.1105858891\\pythonFiles\\lib\\python\\debugpy\\launcher" 50447 -- "c:\\Users\\Sabina Ku\\Desktop\\DevOpsJobs_Sabina CV\\DevOpsJobsApplication - Companies\\potential DevOps opportunities\\Grabyo challenge\\poker_4files_revised\\tests.py"
+
 Player's hand -- 3S 3D 2D 3H 3C, 4 OF A KIND, [3]
 
 .......
