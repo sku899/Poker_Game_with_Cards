@@ -1,8 +1,7 @@
-# Poker_Game_with_Cards
+# Poker Game with Cards
 ## Contributor: Sabina Ku
 
 This solution contains four Python program files, 
-
 
 1. poker.py: This file is a simple poker game. In the game, there are two players, the player and the opponent. The program will generate one hand (5 cards) for each player. The program will determine the winner based on the cards they get in each game.
 2. cardset.py: this file contains the class CardSet, a class of a card set (set of 5 cards) with methods to generate a hand for the player and convert the cards into a string.  
@@ -12,7 +11,6 @@ This solution contains four Python program files,
 This test solution is about the poker game. Let's start the game.
 
 ## 1. The Game   
-
 
 ### 1-1. Start Session 
 
@@ -25,8 +23,6 @@ Players will be asked to choose one of them before the game starts.
 
 #### Unless specified, the following explanation assuming the users select standard 52-card deck. The only difference between stripped 20-card and standard 52-card game is the number of cards used. 
 
-
-
 ### 1-2. Game Session 
 
 Once the game starts, in each game, the computer will randomly choose 5 cards for the players, player and opponent. The computer will choose 5 cards from 52 cards for the player first and choose 5 cards from the remaining 47 cards for the opponent next.
@@ -34,7 +30,6 @@ Once the game starts, in each game, the computer will randomly choose 5 cards fo
 The program will classify each hand into one of the 10 possible rankings. Based on the rankings, the program will determine the winner and the current game ends here.
 
 The users can keep playing by pressing 'Enter' key or input no to quit the game session.
-
 
 ### 1-3. Ending Session  
 
@@ -82,9 +77,6 @@ and
     #to determine the winner
 
 
-
-
-
 ## 2. The Ranking Process  
 The ranking of the hands follows the rules in [Texas Hold'em rules](http://www.wsop.com/how-to-play-poker/images/how-to-ranking.jpg). In short, there are 10 rankings as followed,
 
@@ -108,7 +100,6 @@ These 10 rankings can be further divided into three categories,
 The ranking process will identify the hand as category 1 or (2,3). With further examination on the characteristics of the hand to get the proper ranking. 
 
 This task is performed by two methods in the *class* ***PokerHand***,
-
 
 #### Instance Method, ***'compare_with'***: 
 
